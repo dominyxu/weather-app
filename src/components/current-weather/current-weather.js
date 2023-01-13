@@ -1,11 +1,12 @@
-import "./current-weather.css"
+import "./current-weather.css";
+import React from "react";
 
 const CurrentWeather = ({ data }) => {
     return (
         <div className="weather-box">
             <div className="top-box">
                 <div>
-                    <p className="city">{data.city}</p>
+                <p className="city">{data.city}</p>
                     <p className="weather-description">{data.weather[0].description}</p>
                 </div>
                 <img alt="weather" className="weather-icons" src={`weather-icons/${data.weather[0].icon}.png`} />
@@ -36,7 +37,7 @@ const CurrentWeather = ({ data }) => {
             </div>
         </div>
     );
-}
+};
 
 
 export default CurrentWeather;

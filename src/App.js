@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
-      {CurrentWeather && <CurrentWeather data={currentWeather} />}
+      {currentWeather && <CurrentWeather data={currentWeather} />}
     </div>
   );
 }
