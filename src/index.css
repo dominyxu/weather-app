@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-image: url(/public/weather-app-banner.png);
   font-family: 'Roboto', Arial !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
