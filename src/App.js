@@ -1,7 +1,7 @@
 import './App.css';
 import Search from './components/search/search-bar';
-import weatherForecast from './components/weather-forecast/weather-forecast';
 import CurrentWeather from './components/current-weather/current-weather';
+import WeatherForecast from './components/weather-forecast/weather-forecast';
 import { WEATHER_API_URL, WEATHER_API_KEY } from './geoDBapi';
 import { useState } from "react";
 
@@ -36,7 +36,7 @@ function App() {
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
-      <weatherForecast />
+      {forecast && <WeatherForecast data={forecast} />}
     </div>
   );
 }
