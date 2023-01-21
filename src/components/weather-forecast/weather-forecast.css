@@ -1,4 +1,58 @@
 .title{
     font-size: 23px;
     font-weight: 700;
+    color: white;
+    margin-left: 5px;
+}
+
+.daily-forecast{
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 20px;
+}
+
+.weather-icon{
+    width: 45px;
+}
+
+.DoW{
+    color: #212121;
+    flex: 2 2;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.Description{
+    flex: 1 1;
+    margin-right: 20px;
+    text-align: right;
+
+}
+
+.TempMinMax{
+    color: #757575;
+}
+
+.weather-grid{
+    color: white;
+    align-items: center;
+    font-weight: 600;
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
+    display: inline-flex;
+    flex: 1 1;
+    padding: 5px 15px;
+}
+
+.grid-details{
+    color:white;
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
 }

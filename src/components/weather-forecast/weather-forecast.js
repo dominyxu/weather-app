@@ -9,21 +9,37 @@ const WeatherForecast = ({ data }) => {
 
     return (
         <>
-            <label className="title">Daily Weather</label>
+            <label className="title">Forcasted Daily Weather</label>
             <Accordion allowZeroExpanded>
                 {data.list.splice(0, 7).map((item, idx) => (
                     <AccordionItem key={idx}>
                         <AccordionItemHeading>
                             <AccordionItemButton>
                                 <div className="daily-forecast">
-                                    <img alt="weather" className="icon-small" src={`weather-icons/${item.weather[0].icon}.png`} />
+                                    <img alt="weather" className="weather-icon" src={`weather-icons/${item.weather[0].icon}.png`} />
                                     <label className="DoW">{forecastDay[idx]}</label>
                                     <label className="Description">{item.weather[0].description}</label>
                                     <label className="TempMinMax">{item.main.temp_min}°C/{item.main.temp_max}°C</label>
                                 </div>
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel></AccordionItemPanel>
+                        <AccordionItemPanel>
+                            <div className="weather-grid">
+                                <div className="grid-details">
+                                    <label>Pressure</label>
+                                    <label>: {item.main.pressure}hPa</label>
+                                </div>
+                                <div className="grid-details">
+                                    <label>Humidity</label>
+                                    <label>: {item.main.humidity}%</label>
+                                </div>
+                                <div className="grid-details">
+                                    <label>Wind</label>
+                                    <label>: {item.wind.speed} m/s</label>
+                                </div>
+
+                            </div>
+                        </AccordionItemPanel>
                     </AccordionItem>
 
                 ))}
