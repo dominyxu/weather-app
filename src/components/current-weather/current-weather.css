@@ -5,6 +5,7 @@
     background-color: #c0c0c0;
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
+    position: relative;
 }
 
 .top-box,.bottom-box {
@@ -27,7 +28,7 @@
 .weather-description {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
     letter-spacing: 1px;
     margin-top: -10px;
@@ -37,6 +38,10 @@
 .weather-details {
     width: 200px;
     justify-content: center;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 
 }
 
