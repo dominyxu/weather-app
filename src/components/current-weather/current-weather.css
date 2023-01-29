@@ -1,5 +1,5 @@
 .weather-box {
-    width: 400px;
+    width: 810px;
     border-radius: 6px;
     box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
     background-color: #c0c0c0;
@@ -14,27 +14,30 @@
 }
 
 .city {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
     font-weight: 700;
-    font-size: 24px;
-    line-height: 1;
-    margin: 2;
-    letter-spacing: 2px;
-    padding-left: 20px;
-}
-
-.weather-description {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 18px;
+    font-size: 36px;
+    text-align: center;
     line-height: 1;
     margin: 2;
     letter-spacing: 1px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
-.weather-icon {
+.weather-description {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin-top: -10px;
+
+}
+
+.weather-details {
     width: 200px;
+    justify-content: center;
+
 }
 
 .temperature {

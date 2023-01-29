@@ -6,10 +6,12 @@ const CurrentWeather = ({ data }) => {
         <div className="weather-box">
             <div className="top-box">
                 <div>
-                <p className="city">{data.city}</p>
-                    <p className="weather-description">{data.weather[0].description}</p>
+                    <p className="city">{data.city.toUpperCase()}</p>
                 </div>
+            </div>
+            <div className="weather-details">
                 <img alt="weather" className="weather-icons" src={`weather-icons/${data.weather[0].icon}.png`} />
+                <p className="weather-description">{data.weather[0].description.toUpperCase()}</p>
             </div>
             <div className="bottom-box">
                 <p className="temperature">{Math.round(data.main.temp)}°C</p>
