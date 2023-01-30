@@ -1,5 +1,4 @@
 .weather-box {
-    width: 810px;
     border-radius: 6px;
     box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
     background-color: #c0c0c0;
@@ -28,19 +27,24 @@
 .weather-description {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
     font-weight: 600;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1;
     letter-spacing: 1px;
     margin-top: -10px;
 
 }
 
+.weather-icons{
+    width: 60%;
+    height: 60%;
+}
+
 .weather-details {
-    width: 200px;
+    width: 250px;
     justify-content: center;
     float: right;
     position: absolute;
-    top: 0px;
+    top: 20px;
     right: 0px;
 
 }
@@ -60,13 +64,14 @@
 }
 
 .parameter-row {
-    display: flex;
     justify-content: space-between;
 }
 
 .parameter-label-details{
     font-size: 15px;
     font-weight: 600;
+    justify-content: center;
+    align-items: center;
 }
 .parameter-label {
     text-align: left;

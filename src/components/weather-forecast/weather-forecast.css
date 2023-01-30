@@ -1,5 +1,5 @@
 .title{
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 700;
     color: white;
     margin-left: 5px;
@@ -18,14 +18,16 @@
 }
 
 .weather-icon{
-    width: 45px;
+    width: 5%;
 }
 
 .DoW{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
     color: #212121;
     flex: 2 2;
     font-weight: 700;
     margin-left: 20px;
+    font-size: large;
 }
 
 .Description{
